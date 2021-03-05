@@ -659,9 +659,8 @@ enum Bar {
 ## `error_on_line_overflow`
 
 Error if Rustfmt is unable to get all lines within `max_width`, except for comments and string
-literals. If this happens, then it is a bug in Rustfmt. You might be able to work around the bug by
-refactoring your code to avoid long/complex expressions, usually by extracting a local variable or
-using a shorter name.
+literals. You might be able to work around the limitation by refactoring your code to avoid
+long/complex expressions, usually by extracting a local variable or using a shorter name.
 
 - **Default value**: `false`
 - **Possible values**: `true`, `false`
